@@ -50,3 +50,13 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# ESP IDF files and folders (pair it down to code files, config files, cmakeLists.txt)
+.devcontainer/
+.vscode/
+build/
+managed_components/
+*.lock
+*.code-workspace
+sdkconfig
+*.old

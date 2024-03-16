@@ -1,0 +1,13 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "preRun",
+            "type": "shell",
+            "windows": {
+                //"set ESP_RTOS none" says you won't debug multi-threadded. Increases gdb reliability.
+                "command": "clear & start openocd -c \"set ESP_RTOS none\" -f board/esp32c6-builtin.cfg & exit"
+            }
+        }
+    ]
+}
